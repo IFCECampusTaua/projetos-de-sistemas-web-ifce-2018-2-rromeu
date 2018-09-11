@@ -1,0 +1,72 @@
+#corpo{
+    border: 1px solid #DDDDDD;
+    font-family:arial;
+    width: 600px;
+    height: 300px;
+}
+.title{
+    font: 13px;
+    font-weight: bold;
+    color: #999999;
+    text-align: center;
+    width: 40px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.num{
+    width: 25px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.n{
+    border-bottom: 1px solid #DDDDDD;
+}
+.classificados{
+    color: #003366;
+    font: 18px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #DDDDDD;
+}
+.meiotabela{
+    color: #1398BE;
+    font: 18px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #DDDDDD;
+}
+.zrebaixamento{
+    color: #DE9800;
+    font: 18px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #DDDDDD;
+}
+.namet{
+    font: 14px;
+    color: #666666;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #DDDDDD;
+}
+.pontos{
+    font: 14px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #DDDDDD;
+}
+.semBack{
+    font: 14px;
+    color: #666666;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+}
+.comBack{
+    font: 14px;
+    color: #666666;
+    font-weight: normal;
+    text-align: center;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #DDDDDD;
+}

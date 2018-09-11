@@ -1,0 +1,13 @@
+#corpo{
+    font: 10pt;
+}
+#title{
+    font-family:verdana;
+    color: red;
+    text-align: center;
+}
+#texto{
+    font-family: verdana;
+    color: black;
+    text-align: justify;
+}
