@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 01 lista 02 de JavaScript</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"></script>
+    <script type="text/javascript" src="jquery.validate.min.js"></script>
+    <script type="text/javascript" src="messages_pt_BR.js"></script>
+
+</head>
+<body>
+<h2>Formulário de Incrição</h2>
+<p id="mensagemInicial"></p>
+
+<form action="fomulario" id="formCadastro" method="post">
+    <label>NOME:</label>
+    <br>
+    <input type="text" name="nome" id="nome">
+    <br>
+    <label>TELEFONE:</label>
+    <br>
+    <input type="tel" name="telefone" id="telefone">
+    <br>
+    <label>DATA DE NASCIMENTO:</label>
+    <br>
+    <input type="date" name="dataNascimento" id="dataNasc">
+    <br>
+    <label>CPF:</label>
+    <br>
+    <input type="number" name="cp" id="cpf">
+    <br>
+    <label>INSTITUIÇÃO</label>
+    <br>
+    <input type="text" name="instituicao" id="inst">
+    <br>
+    <label>E-MAIL:</label>
+    <br>
+    <input type="email" name="email" id="email">
+    <br>
+    <button id="btn" type="submit">ENVIAR</button>
+</form>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#telefone").mask("(00) 0 0000-0000");
+        $("#dataNascimento").mask("00/00/0000");
+        $("#cpf").mask("000.000.000-00");
+    });
+    $("#formCadastro").validate({
+        rules:{
+            nom:{
+                required:true,
+                maxlength:255,
+                minlength:4,
+            },
+            telefone:{
+                required:true,
+                max:9
+            },
+            dataNascimento:{
+                required: true,
+                min:18,
+                max:110,
+            },
+            cpf:{
+                required: true,
+                cpfBR:true,
+                min:11,
+                max:11,
+
+            },
+            inst:{
+                required:true,
+                maxLength:255,
+                minLength:3,
+            }
+
+        },
+        submitHandler: function (form) {
+            alert("Enviado com sucesso!")
+        }
+    })
+</script>
+</body>
+</html>
